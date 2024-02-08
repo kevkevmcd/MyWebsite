@@ -1,13 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import AppRouter from './AppRouter';
+import { BrowserRouter as Router} from 'react-router-dom';
 import './index.css';
+import NavBar from './components/NavBar';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <AppRouter />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+function App(){
+  return <div className='App'>
+    <Router>
+      <NavBar />
+      <AppRouter />
+    </Router>
+  </div>
+}
 
 export default App;
