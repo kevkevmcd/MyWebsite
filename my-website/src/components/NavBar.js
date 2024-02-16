@@ -7,13 +7,13 @@ function NavBar(){
       <nav className="nav">
         <ul className={open ? "nav-links active" : "nav-links"}>
           <li>
-            <Link to="/home">Home</Link>
+            <Link to="/app/home">Home</Link>
           </li>
           <li>
-            <Link to="/Projects">Projects</Link>
+            <Link to="/app/projects">Projects</Link>
           </li>
           <li>
-            <Link to="/About">About</Link>
+            <Link to="/app/about">About</Link>
           </li>
         </ul>
         <i
