@@ -1,19 +1,18 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import '../index.css';
-import NavBar from './NavBar';
-import Footer from './Footer';
+import EditorNav from './EditorNav';
+import FileExplorer from './FileExplorer';
 
 function Editor() {
   return (
     <div>
       <div className='container'>
-        <NavBar />
+        <EditorNav />
+        <FileExplorer />
         <Outlet />
       </div>
       <br />
-      <br />
-      <Footer />
     </div>
   );
 }
